@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drag and Drop Example</title>
+	<!-- Load Tailwind CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
+
+	<style>
+		/* Add custom styles here */
+	</style>
+</head>
+<body class="bg-gray-100">
+
+	<div class="max-w-md mx-auto mt-8">
+
+		<!-- Drag and drop list -->
+		<div class="p-4 bg-white rounded-lg shadow-lg">
+			<ul id="list" class="list-none p-0 m-0 bg-gray-100 border border-gray-300 min-h-40">
+				<li id="item1" draggable="true" class="bg-white border border-gray-300 p-4 mb-2 cursor-move">Item 1</li>
+				<li id="item2" draggable="true" class="bg-white border border-gray-300 p-4 mb-2 cursor-move">Item 2</li>
+				<li id="item3" draggable="true" class="bg-white border border-gray-300 p-4 mb-2 cursor-move">Item 3</li>
+				<li id="item4" draggable="true" class="bg-white border border-gray-300 p-4 mb-2 cursor-move">Item 4</li>
+				<li id="item5" draggable="true" class="bg-white border border-gray-300 p-4 mb-2 cursor-move">Item 5</li>
+			</ul>
+		</div>
+
+		<!-- Drop target -->
+		<div id="target" class="mt-4 p-4 bg-white rounded-lg shadow-lg border-dashed border-2 border-gray-300 min-h-60">
+			<p class="text-center text-gray-400">Drop items here</p>
+		</div>
+
+	</div>
+    <script src="index.js"></script>
+</body>
+</html>
